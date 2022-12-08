@@ -16,10 +16,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <table>
-        <li>{posts.map(post =>(post.id))}</li>
-        <li>{posts.map(post =>(post.name))}</li>
-      </table>
+      
+      {posts.map(post =><li>{post.id}</li>)}
+      {posts.map(post =><li>{post.name}</li>)}
+      
     </div>
   );
 }
